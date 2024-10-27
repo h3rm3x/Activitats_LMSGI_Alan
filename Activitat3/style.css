@@ -1,0 +1,94 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* 2. Body */
+body {
+  margin: 20px;
+  width: 90vw;
+  min-height: 600px;
+  border: 3px solid gray;
+  padding: 20px;
+}
+
+/* 3. Títol del header */
+header h1 {
+  background-color: #227C9D;
+  color: #fdfdfd;
+  padding: 30px 15px;
+  margin-bottom: 20px;
+  border-width: 5px;
+  border-color: #FFCB77;
+  border-style: dotted;
+}
+
+/* 4. Barra de navegació */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+/* 5. Main */
+main {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.article {
+  width: 30%;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid #0a0a0a;
+  border-radius: 10px;
+  color: #090909;
+}
+
+.article1 {
+  background-color: #FFCB77;
+}
+
+.article2 {
+  background-color: #17C3B2;
+}
+
+.article3 {
+  background-color: #FE6D73;
+}
+
+.article h2 {
+  margin-bottom: 10px;
+}
+
+.article p {
+  padding: 10px;
+}
+
+/* 6. Footer */
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #333;
+  color: #f5f5f5;
+  border-top: 5px solid #227C9D;
+}

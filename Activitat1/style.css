@@ -1,0 +1,99 @@
+* {
+  background-color: #a4b28f;
+}
+
+body{
+  color:#0048ff
+}
+h2 {
+  color: darkmagenta;
+}
+
+p subrayado{
+color: #fafafa;
+background-color:#030303 ;
+}
+
+p black{
+  color:#000000;
+  font-weight: bold ;
+}
+
+
+
+header h1 {
+  color: #383838;
+  margin: 0;
+}
+
+
+
+/* General style for the main content */
+main {
+  margin-top: 20px;
+}
+
+
+
+h3 {
+  color: darkmagenta;
+  font-size: 20px;
+}
+
+/* Styling for paragraphs */
+p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Highlight abbreviations and emphasized words */
+abbr {
+  border-bottom: 1px dashed #000;
+  cursor: help;
+}
+
+abbr[title] {
+  color: #eeeeee;
+}
+
+/* Custom style for specific terms like CSS, HTML, URI */
+p abbr, p strong {
+  color: #00008b;
+  background-color: #060101;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+strong {
+  color: #006400;
+}
+
+/* Style for lists */
+ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+li {
+  margin-bottom: 5px;
+  color: #de0ade;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #0a0064;
+  margin: 20px 0;
+}
+
+footer {
+  color: #383838;
+  margin-top: 20px;
+}
+
+/* Add styling for links */
+a {
+  color: #222222;
+  text-decoration: underline;
+}
+
+

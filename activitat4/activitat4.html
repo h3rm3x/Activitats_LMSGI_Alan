@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UD2. Exercici 1</title>
+  <link rel="stylesheet" href="activitat4.css">
+</head>
+<body>
+  <header>
+    <img id="logo" src="img/logo_fons_clar.png" alt="Logo de la pàgina web">
+    <nav>
+      <a href="./index.html" style="text-decoration: underline;">Home</a>
+      <a href="./views/checkout.html">Checkout</a>
+      <a href="./views/account.html">Account</a>
+      <a href="./views/contact.html">Contact</a>
+      <a href="./views/about.html">About</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Formulari de registre</h1>
+    
+    <form action="" method="post">      
+      <p>
+        <label for="nom">Nom:<span class="red">*</span></label>
+        <input type="text" name="nombre" minlength="2" maxlength="30" required autofocus>
+      </p>
+      
+      <p>
+        <label for="cognom1">Primer cognom:<span class="red">*</span></label>
+        <input type="text" name="cognom1" maxlength="50" required>
+      </p>
+
+      <p>
+        <label for="cognom2">Segon cognom: </label>
+        <input type="text" name="cognom2" maxlength="50">
+      </p>
+      
+      <p>
+        <label for="genere">Gènere:<span class="red">*</span></label>
+        <input type="radio" name="genere" value="d" required> Dona
+        <input type="radio" name="genere" value="h"> Home
+        <input type="radio" name="genere" value="n"> No binari
+      </p>
+      
+      <p>
+        <label for="mail">Email:<span class="red">*</span></label>
+        <input type="email" name="mail" maxlength="100" required>
+      </p>
+
+      <p id="text-textarea">
+        <label for="descripcio">Descripció:</label>
+      </p>
+      <p id="textarea">
+        <textarea name="descripcio" cols="50" rows="8" autocomplete="off" maxlength="300" placeholder="Entra una descripció amb un màxim de 300 caràcters..."></textarea>
+      </p>
+
+      <hr>
+      <h3>Consentiment</h3>
+
+      <div>
+        <p>
+          <label for="info"></label>
+          <input type="checkbox" name="info" checked> Vull rebre informació amb les darreres novetats i ofertes personalitzades.
+        </p>
+        
+        <p>
+          <label for="condicions"></label>
+          <input type="checkbox" name="condicions" required> Declar haver llegit i acceptar les <a href="#condicions-generals">condicions generals</a> de l'aplicació i la normativa sobre protecció de dades personals.
+        </p>
+        
+        <p>
+          <input type="submit" value="Envia">
+        </p>
+      </div>      
+    </form>
+  </main>
+</body>
+</html>

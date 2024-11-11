@@ -51,15 +51,16 @@ aside nav ul li a {
 
 section {
   text-align: center;
-  padding: 20px;
   display: inline-block;
   width: 80%;
-  vertical-align: top;
+  vertical-align: middle;
+  margin-top: 10%;
+
 }
 
 .card {
   width: 40%;
-  margin: 2.5%;
+  margin: .5%;
   background-color: #e29578;
   box-shadow: 2px 2px 8px #0000001a;
   padding: 20px;

@@ -29,11 +29,10 @@ main{
 aside {
   background-color: #b56576;
   padding: 20px;
-  width: 30%;
+  width: 20%;
   display:inline-block;
   height: 60vH ;
   vertical-align: top;
-  
 }
 
 aside nav ul {
@@ -52,15 +51,14 @@ aside nav ul li a {
 
 section {
   text-align: center;
-
   padding: 20px;
-  display: table-cell;
-  width: 70%;
+  display: inline-block;
+  width: 80%;
   vertical-align: top;
 }
 
 .card {
-  width: 35%;
+  width: 40%;
   margin: 2.5%;
   background-color: #e29578;
   box-shadow: 2px 2px 8px #0000001a;

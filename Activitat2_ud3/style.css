@@ -282,6 +282,7 @@ main section div img {
     box-shadow: inset;
     border-radius: 10px;
     z-index: 10;
+    padding: 5px;
   }
   .ul-features li{
     margin: 0;
@@ -289,7 +290,7 @@ main section div img {
   }
 
   .ul-features{
-    left: 10px;
+    left: 15px;
     background-color: #ffffff;
     border-radius: 10px;
   }

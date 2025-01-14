@@ -1,0 +1,189 @@
+/* Variables de color */
+:root {
+  --color-bg: #e7e7dd;
+  --color-primary: #629677;
+  --color-secondary: #D496A7;
+  --color-accent: #995D81;
+  --color-black: #000;
+  --color-white: #FFF;
+}
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-black);
+  
+}
+
+h3 {
+  font-size: 32px;
+}
+
+button {    
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  align-self: center;
+  width: 100px;
+  border-radius: 1em;
+  background-color: var(--color-bg);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-radius: 0.5em;
+}
+
+button.btn-primary:hover {
+  background-color: var(--color-accent);
+}
+
+.set-buttons {
+  padding: 10px 0;
+}
+
+.btn-open, .btn-pending, .btn-closed {
+  border-style: solid;
+  border-width: 0.6px;
+}
+
+.btn-all {
+  background-color: var(--color-secondary);
+}
+
+.btn-open {
+  border-color: var(--color-accent);
+}
+.btn-open:hover {
+  background-color: var(--color-accent);
+}
+
+.btn-pending{
+  border-color: var(--color-primary);
+}
+.btn-pending:hover{
+  background-color: var(--color-primary);
+}
+
+.btn-closed {
+  border-color: var(--color-black);
+}
+.btn-closed:hover {
+  background-color: var(--color-black);
+  color: var(--color-bg);
+}
+
+.circle {
+  background-color: var(--color-accent);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.pending {
+  background-color: var(--color-primary);
+}
+
+.closed {
+  background-color: var(--color-black);
+}
+
+td{
+  padding: 0.5em;
+}
+
+
+/*Main*/
+
+main {
+  padding: 2em;
+  background-color: var(--color-bg);
+}
+.cards{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:first-child{
+  background-color: var(--color-primary);
+}
+
+.card:nth-child(2){
+  background-color: var(--color-secondary);
+}
+
+.card:nth-child(3){
+  background-color: var(--color-accent);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+img[alt="art"]{
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+      "tarjeta1 tarjeta2 tarjeta3"
+      "tarjeta4 tarjeta4 tarjeta5"
+      "tarjeta6 tarjeta7 tarjeta7"
+      "tarjeta8 tarjeta8 tarjeta8";
+  }
+
+  .card:nth-child(1){
+    grid-area: tarjeta1;
+  }
+
+  .card:nth-child(2){
+    grid-area: tarjeta2;
+  }
+
+  .card:nth-child(3){
+    grid-area: tarjeta3;
+  }
+
+  .card:nth-child(4){
+    grid-area: tarjeta4;
+  }
+
+  .card:nth-child(5){
+    grid-area: tarjeta5;
+  }
+
+  .card:nth-child(6){
+    grid-area: tarjeta6;
+  }
+
+  .card:nth-child(7){
+    grid-area: tarjeta7;
+  }
+
+  .card:nth-child(8){
+    grid-area: tarjeta8;
+  }
+}

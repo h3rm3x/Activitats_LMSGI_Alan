@@ -204,46 +204,6 @@ main section div img {
     display: flex;;
   }
 
-  main {
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-  }
-
-  main picture img, main section {
-    display: flex;
-  }
-  
-  main picture, main section{
-    width: 35%;
-  }
-
-  main picture img {
-    width: 90%;
-  }
- 
-
-  main section {
-    text-align: left;
-  }
-
-  main section h2 {
-    font-size: 70px;
-  }
-
-  main section p {
-    padding: 50px 0;
-  }
-
-  main section div {
-    margin-top: 100px;
-  }
-  main section div img {
-    padding: 0 15px;
-    height: 20px;
-  }
-
   header nav {
     display: flex;
     margin-left: 40px;
@@ -331,5 +291,45 @@ main section div img {
     bottom: 15px;
     position: absolute;
     right: 20px;
+  } 
+  
+  main {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+
+  main picture img, main section {
+    display: flex;
+  }
+  
+  main picture, main section{
+    width: 35%;
+  }
+
+  main picture img {
+    width: 90%;
+  }
+ 
+
+  main section {
+    text-align: left;
+  }
+
+  main section h2 {
+    font-size: 70px;
+  }
+
+  main section p {
+    padding: 50px 0;
+  }
+
+  main section div {
+    margin-top: 100px;
+  }
+  main section div img {
+    padding: 0 15px;
+    height: 20px;
   }
 }

@@ -1,0 +1,251 @@
+:root{
+    --color_primario: #ee6611;
+    --color_secundario: #020024;
+    --color_fondo: #fafafa;
+    --color_texto: #050505;
+    --accent_color: #0010c2;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(https://fonts.google.com/specimen/Inter);
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(https://fonts.google.com/specimen/Poppins);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+    
+main{
+    display: grid;
+    background-color: var(--color_fondo);
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    grid-template-areas: 
+    " intro "
+    " activos-traspasables "
+    " dificultades-traspaso-y-opciones "
+    " like-share "
+    " tabla-articulos ";
+    gap: 20px;
+}
+
+ h2, h3 {
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    color: var(--accent_color);
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    list-style-type: disc;
+    margin-left: 20px; 
+}
+
+main h2{
+    font-size: 1.8em;
+    text-align: center;
+}
+main h3{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+main p{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   font-size: 1.4em;
+   text-align: left;
+   padding: 10px;               
+}    
+
+#intro img{
+    width:380px;
+    margin-top: 20px;
+}
+
+#intro{
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#activos-traspasables{
+    display: flex;
+    flex-direction: column;
+    grid-area: activos-traspasables;
+}
+
+#dificultades-traspaso-y-opciones{
+    display: flex;
+    flex-direction: column;
+    grid-area: dificultades-traspaso-y-opciones;
+}
+
+.tabla-articulo{
+    grid-area: tabla-articulos;
+}
+
+#activos-traspasables ul{
+    padding: 20px;
+}
+
+#dificultades-traspaso-y-opciones ul{
+    padding: 20px;
+}
+
+#activos-traspasables ul li{
+    margin-top: 10px;
+}
+
+#articulos-recomendados {
+  display: none;
+}
+
+#like-share{
+    grid-area: like-share;
+    display: flex;
+    gap: 20px;
+}
+
+#like-share button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px){
+    main{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "intro tabla-articulos"
+        "activos-traspasables tabla-articulos"
+        "dificultades-traspaso-y-opciones tabla-articulos"
+        "dificultades-traspaso-y-opciones tabla-articulos";
+    }
+    main h2{
+        font-size: 1.7em;
+    }
+    main h3{
+        font-size: 1.4em;
+    }
+    main p{
+        font-size: 1.3em;
+    }
+    #intro{
+        text-align: left;
+        gap: 10px;
+    }
+
+    #activos-traspasables ul{
+        padding: 0;
+    }
+
+    #dificultades-traspaso-y-opciones ul{
+        padding: 0;
+    }
+
+    #activos-traspasables ul li{
+        margin-top: 0;
+    }
+
+    #intro img{
+        width: 80%;
+    }
+    
+   .tabla-articulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        gap: 20px;
+        width: 100%;
+        position: sticky;
+        top: 10px;
+        align-self: flex-start;
+    }
+
+
+    #articulos-recomendados{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: var(--color_primario);
+        border-top: 1px solid var(--accent_color);
+        
+    }
+    
+    #articulos-recomendados h3 {
+        font-family: "poppins", sans-serif;
+        text-align: center;
+        color: var(--color_texto);
+        margin-bottom: 10px;
+    }
+    
+    #articulos-recomendados ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #articulos-recomendados ul li {
+        margin: 10px 0;
+    }
+    
+    #articulos-recomendados ul li a {
+        text-decoration: none;
+        color: var(--color_texto);
+        font-size: 1.2em;
+    }
+    
+    #articulos-recomendados ul li a:hover {
+        text-decoration: underline;
+    }
+
+    #results-table{
+        font-size: .8em;
+    }
+
+
+    #like-share button{
+        
+        font-size: 1.2em;
+        position: sticky;
+        bottom: 20px; ;
+    }
+        
+}
+
+
+@media (min-width: 600px) AND (max-width: 1024px){
+    main p{
+        font-size: 1.2em;
+    }
+    main h2 {
+        font-size: 1.5em;
+    }
+   
+    #intro img{
+        width: 500px;
+    }
+
+}
+
+
+
+        

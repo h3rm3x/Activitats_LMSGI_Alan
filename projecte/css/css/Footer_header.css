@@ -1,0 +1,303 @@
+:root{
+  --color_primario: #ee6611;
+  --color_secundario: #020024;
+  --color_fondo: #fafafa;
+  --color_texto: #050505;
+  --accent_color: #0010c2;
+}
+@font-face {
+  font-family: "inter";
+  src: url(./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "inter", sans-serif;
+}
+  
+h1, h2, h3 {
+  font-family: "poppins", sans-serif;
+}
+  
+header {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  background-color: var(--accent_color);
+  color: var(--color_fondo);
+  padding: 10px;
+}
+  
+header h1, header nav {
+  align-items: center;
+}
+  
+header .logo{
+  width: 100px;;
+}
+  
+  
+header h1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.7em;
+}
+  
+header>div{
+ width: 6.25em;
+}
+
+header img[alt=logo] {
+ width: 7em;
+}
+  
+header>button{
+  background-color: transparent;
+  border: none;
+}
+  
+header>button:hover{
+  cursor: pointer;
+}
+  
+#lista-paginas {
+ display: flex;   
+ padding-left: 10px;
+ justify-content: space-between;
+ gap: 10px;
+}
+
+#lista-paginas.menu-hidden ul {
+  display: none;
+}
+#lista-paginas button{
+  border: none;
+}
+
+#lista-paginas button:hover{
+  cursor: pointer;
+}
+  
+.menu-hidden #cerrar-menu {
+  display: none;
+}
+  
+#lista-paginas #menu{
+  background-color: transparent;
+}
+
+
+#lista-paginas.menu-visible {
+  transform: translateX(0);
+}
+
+.menu-visible ul {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  flex-wrap: wrap;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background-color: var(--accent_color);
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  gap: 15px;
+}
+
+.menu-visible #cerrar-menu {
+  display: block;
+  align-self: flex-start;
+  z-index: 1001; 
+  background-color: transparent;
+}
+
+.menu-visible #cerrar-menu img {
+  width: 100%;
+  height: 100%;
+} 
+
+header ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1em;
+}
+  
+header ul li a {
+  color: #fafafa;
+  text-decoration: none;
+  font-weight: 500;
+}
+  
+header ul li a:hover {
+  color: #ddd;
+}
+  
+.login-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+  
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.social-links a {
+  color: var(--color_fondo);
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+footer p {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+footer img {
+  width: 100px;
+}
+
+#results-table{
+  grid-area: results-table;
+}
+
+#results-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+}
+
+#results-table table td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#results-table table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+
+
+@media (min-width: 1024px){
+  header {
+      height: 10vh;
+    }
+  
+  header h1 {
+    font-size: 2em;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #lista-paginas ul li img{
+    height: 25px;
+  }
+
+  #menu{
+    display: none;
+  }
+  
+  header img[alt=logo] {
+      width: 7em;
+  }
+
+  #lista-paginas>img{
+    display: none;
+  }
+    
+  #lista-paginas button:first-of-type {
+    display: none;
+  }
+
+  #lista-paginas {
+    justify-content: center;
+    width: auto;
+  }
+  
+  #lista-paginas.menu-hidden ul {
+    display: flex;
+  }
+  
+  #lista-paginas ul li {
+    padding-right: 15px;
+    margin: 0;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+  }
+
+}
+
+
+@media (min-width: 600px) AND (max-width: 1023px) {
+    header{
+      height: 10vh;
+    }
+    header h1{
+      font-size: 2.5em;
+      vertical-align: middle;
+    }
+    header>div{
+      width: 5em;
+    }
+  
+    header img[alt=logo]{
+      width: 7em;
+    }
+
+    header>button:hover{
+      cursor: pointer;
+    }
+  
+    .login-button{
+      padding: 10px 20px;
+    }
+
+    #lista-paginas ul {
+      top: -20px;
+    }
+}
+

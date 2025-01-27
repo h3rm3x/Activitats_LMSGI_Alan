@@ -224,8 +224,13 @@ article.principal, .otros {
 .image-placeholder {
   width: 100%;
   height: 150px;
-  background-color: #ddd;
+  background-color: transparent;
   margin-bottom: 15px;
+}
+.image-placeholder img {
+  
+  height: 100%;
+  object-fit: cover;
 }
 
 .category {

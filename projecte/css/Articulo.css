@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: "inter";
-    src: url(https://fonts.google.com/specimen/Inter);
+    src: url(../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) ;
 }
 
 @font-face {
     font-family: "poppins";
-    src: url(https://fonts.google.com/specimen/Poppins);
+    src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
 }
 
 * {
@@ -27,14 +27,12 @@ main{
     display: grid;
     background-color: var(--color_fondo);
     grid-template-columns: auto;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(3, auto);
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
     grid-template-areas: 
-    " intro "
-    " activos-traspasables "
-    " dificultades-traspaso-y-opciones "
+    " articulo "
     " like-share "
     " tabla-articulos ";
     gap: 20px;
@@ -132,12 +130,11 @@ main p{
 @media (min-width: 1024px){
     main{
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
         grid-template-areas: 
-        "intro tabla-articulos"
-        "activos-traspasables tabla-articulos"
-        "dificultades-traspaso-y-opciones tabla-articulos"
-        "dificultades-traspaso-y-opciones tabla-articulos";
+        
+        "articulo tabla-articulos"
+        "articulo like-share";
     }
     main h2{
         font-size: 1.7em;
@@ -222,11 +219,11 @@ main p{
     }
 
 
-    #like-share button{
+    #like-share{
         
         font-size: 1.2em;
         position: sticky;
-        bottom: 20px; ;
+        top: 20px; ;
     }
         
 }

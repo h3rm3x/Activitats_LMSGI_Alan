@@ -1,0 +1,90 @@
+:root{
+    --color_primario: #ee6611;
+    --color_secundario: #020024;
+    --color_fondo: #fafafa;
+    --color_texto: #050505;
+    --accent_color: #0010c2;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) ;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+main{
+    background-color: var(--color_fondo);
+    color: var(--color_texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+
+
+h1, h2, h3 {
+    font-family: "poppins", sans-serif;
+}
+
+h2{
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--accent_color);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--accent_color);
+    height: 60%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--color_primario);
+}
+
+form button{
+    background-color: var(--accent_color);
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#error-message{
+    background-color: white;
+    color: red;
+    font-size: 1em;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+

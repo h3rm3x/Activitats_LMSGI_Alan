@@ -6,6 +6,17 @@
 --color_texto: #050505;
 --accent_color: #0010c2;
 }
+
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) ;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,58 +27,6 @@ body {
   font-family: Arial, sans-serif;
   color: var(--color_texto);
   background-color: var(--color_fondo);
-}
-
-/* Encabezado */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--accent_color);
-  color: var(--color_fondo);
-  width: 100%;
-}
-
-header img {
-  width: 5em;
-}
-header nav {
-  display: inline;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-
-}
-nav ul li {
-  display: inline-block;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-header nav ul li a:hover {
-  color: #ddd;
-}
-
-.login-button {
-  background-color: var(--color_primario);
-  color: var(--color_fondo);
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-left: 20px;
-  text-align: right;
-}
-.login-button:hover {
-  background-color: #ee5511;
 }
 
 /* Sección de noticias de la NBA */
@@ -155,51 +114,28 @@ article p {
   text-decoration: underline;
 }
 
-/* Pie de página */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+@media (max-width: 768px) {
+  article {
+    width: 100%;
+    box-shadow: none;
+  }
+  
+  main img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .articles-grid {
+    flex-direction: column;
+  }
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-content .logo {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-footer nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-footer nav a:hover {
-  color: #ddd;
-}
-
-.social-links a {
-  color: #fff;
-  margin: 0 5px;
-  font-size: 18px;
-}
-
-.social-links a:hover {
-  color: #007bff;
-}
-
-footer p {
-  font-size: 14px;
-  color: #aaa;
-  margin-top: 10px;
+@media (max-width: 480px) {
+  main h1 {
+    font-size: 24px;
+  }
+  
+  article p {
+    font-size: 12px;
+  }
 }

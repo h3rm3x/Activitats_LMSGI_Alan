@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crar Nueva Cuenta</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/Footer_header.css">
+</html>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/logos/LogoPequeOscuro.png"alt="logo">
+        </div>
+        <h1>BALONCESTO CON Ñ</h1>
+          
+        <nav id="lista-paginas" class="menu-hidden">
+            <button id="menu"><img src="../assets/logos/icon-menu.png" alt="menu"></button>
+            
+             <ul>
+                <li><button id="cerrar-menu"><img src="../assets/logos/cerrar-menu.png" alt="cerrar-menu" ></button></li>
+                <li><a class="Inicio" href="" target="_self">Inicio</a></li>
+                <li><a class="NBA" href="" target="_self">NBA</a></li>
+                <li><a class="Euroliga" href="" target="_self">Euroliga</a></li>
+                <li><a class="ACB" href=""target="_self">Liga ACB</a></li>
+            </ul>
+            <button class="login-button">Login</button>
+            <button class="logout-button">Logout</button>  
+        </nav>
+ 
+    </header>
+    <main>
+        <form action="">
+            <h2>Registrarse</h2>
+            <div class="form-group">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-email">Confirmar correo electrónico:</label>
+                <input type="email" id="confirm-email" name="confirm-email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" id="toggle-password" class="toggle-password">
+                        <img src="../assets/logos/show_password.png" alt="Mostrar contraseña" class="visible">
+                        <img src="../assets/logos/hide_password.png" alt="Ocultar contraseña" class="hidden">
+                    </button>
+                </div>
+
+                <div class="password-strength">
+                    <p id="strength-text">Fortaleza de la contraseña</p>
+                    <hr id="strength-bar" class="weak">
+                </div>
+                
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirmar contraseña:</label>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <button type="button" id="toggle-confirm-password" class="toggle-password">
+                        <img src="../assets/logos/show_password.png" alt="Mostrar contraseña" class="visible">
+                        <img src="../assets/logos/hide_password.png" alt="Ocultar contraseña" class="hidden">
+                    </button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rol">Rol:</label>
+                <select id="rol" name="rol" required>
+                    <option value="editor">Editor</option>
+                    <option value="lector">Lector</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit">Registrarse</button>
+            </div>
+
+            <div class="error-message">
+                <p id="error-message"> </p>
+            </div>
+        </form>
+        <script src="../js/register.js"></script>
+        <script src="../js/menu.js"></script>
+    </main>
+    <footer>
+         <div class="footer-content">
+            <div class="logo"></div>
+            <img src="../assets/logos/LogoPequeOscuro.png">
+        </div>
+        <nav>
+            <a class="Inicio" href="">Inicio</a>
+            <a class="Euroliga" href="">Euroliga</a>
+            <a class="ACB" href="">Liga ACB</a>
+            <a  href="">Contacto</a>
+        </nav>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 La meva pàgina web. Tots els drets reservats.</p>
+    </footer>
+</body>

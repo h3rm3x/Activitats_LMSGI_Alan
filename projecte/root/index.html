@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-    <link rel="stylesheet" href="./css/Homepage.css">
+    <link rel="stylesheet" href="..\css\HomePage.css">
+    <link rel="stylesheet" href="..\css\Footer_header.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="./logos/LogoPequeOscuro.png"alt="logo">
+            <img src="../assets/logos/LogoPequeOscuro.png"alt="logo">
         </div>
         <h1>BALONCESTO CON Ñ</h1>
       
         
        
             
-        <nav id="lista-paginas">
-            <button id="menu"><img src="./logos/icon-menu.png" alt="menu"></button>
-            <img src="./logos/icon-close-menu.svg" alt="cerrar-menu" id="cerrar-menu">
-           
+        <nav id="lista-paginas" class="menu-hidden">
+            <button id="menu"><img src="../assets/logos/icon-menu.png" alt="menu"></button>
+            
              <ul>
-                 <li>
-                     <a href="NBA.HTML">NBA</a> 
-                 </li>
-                 <li>
-                     <a href="Euroliga.html">Euroliga</a>
-                 </li>
-                 <li>
-                     <a href="ACB.html">ACB</a>
-                 </li>
+                <li><button id="cerrar-menu"><img src="../assets/logos/cerrar-menu.png" alt="cerrar-menu" ></button></li>
+                <li>
+                    <a class="NBA" href="" target="_blank">NBA</a> 
+                </li>
+                <li>
+                    <a class="Euroliga" href="" target="_blank">Euroliga</a>
+                </li>
+                <li>
+                    <a class="ACB" href="" target="_blank">ACB</a>
+                </li>
+                <li>
+                    <a class="admin" href="" target="_blank">Admin</a>
+                </li>
             </ul>
-            <button class="login-button">Login</button>  
-        </nav>
-                
-           
-
+            <button class="login-button">Login</button>
+            <button class="logout-button">Logout</button>  
+        </nav>  
         
     </header>
 
@@ -49,37 +51,46 @@
 
             <!-- Principales Artículos -->
             <div class="slideshow-container principales-articulos">
-                <div class="slide">
-                    <article class="principal">
-                        <div class="image-placeholder"><img src="./imagenes/foto-luka.jpg" alt=""></div>
+                <div class="slide" >
+                    <article class="principal" data-id="1">
+                        <div class="image-placeholder"><img src="../assets/imagenes/foto-luka.jpg" alt=""></div>
                         <p class="category">NBA</p>
-                        <h2>Qué pueden hacer los Dallas Mavericks en el trade deadline de la NBA en 2025</h2>   
+                        <h2>Opciones de los Mavericks para el deadline</h2>   
                         <p>Posibles objetivos y activos a mover por parte de los Mavs en el deadline de 2025</p>
                         <p class="author">Author Name</p>
-                        <button class="like-button">Like</button>
-                        <a href="./Articulo.html" class="read-more">Read more</a>
+                        <div class="like-container">
+                            <button class="like-button"><img id="like-img" src="../assets/logos/like.png" alt=""></button>
+                        <p class="Nº likes">0</p>
+                        </div>
+                        <a href="" target="_blank" class="read-more">Read more</a>
                     </article>
                 </div>
                 <div class="slide">
-                    <article class="principal">
-                        <div class="image-placeholder"><img src="./logos/foto_Maccabi.png" alt=""></div>
+                    <article class="principal" data-id="2">
+                        <div class="image-placeholder"><img src="../assets/logos/foto_Maccabi.png" alt=""></div>
                         <p class="category">Euroliga</p>
                         <h2>Gran Victoria de Maccabi en Berlin</h2>
                         <p>Records batidos, actuaciones de carrera y tiros sobre la bocina llevaron a la victoria de Maccabi en Berlin</p>
                         <p class="author">Author Name</p>
-                        <button class="like-button">Like</button>
-                        <a href="#" class="read-more">Read more</a>
+                        <div class="like-container">
+                            <button class="like-button"><img id="like-img" src="../assets/logos/like.png" alt=""></button>
+                            <p class="Nº likes">0</p>
+                        </div>                        
+                        <a href="" target="_blank" class="read-more">Read more</a>
                     </article>
                 </div>
                 <div class="slide">
-                    <article class="principal">
+                    <article class="principal" data-id="3">
                         <div class="image-placeholder"></div>
                         <p class="category">Category</p>
                         <h2>Blog title heading goes here</h2>
                         <p>Lorem ipsum dolor sit amet et delectus accommodare.</p>
                         <p class="author">Author Name</p>
-                        <button class="like-button">Like</button>
-                        <a href="#" class="read-more">Read more</a>
+                        <div class="like-container">
+                            <button class="like-button"><img id="like-img" src="../assets/logos/like.png" alt=""></button>
+                            <p class="Nº likes">0</p>
+                        </div>                        
+                        <a href="" target="_blank" class="read-more">Read more</a>
                     </article>
                 </div>
                
@@ -93,36 +104,45 @@
             <!-- Otros Artículos -->
             <div class="slideshow-container otros-articulos">
                 <div class="slide">
+                    <article class="otros" data-id="4">
+                        <div class="image-placeholder"></div>
+                        <p class="category">Category</p>
+                        <h2>Blog title heading goes here</h2>
+                        <p>Lorem ipsum dolor sit amet et delectus accommodare.</p>
+                        <p class="author">Author Name</p>
+                        <div class="like-container">
+                            <button class="like-button"><img id="like-img" src="../assets/logos/like.png" alt=""></button>
+                            <p class="Nº likes">0</p>
+                        </div>                        
+                        <a href="" class="read-more" target="_blank">Read more</a>
+                    </article>
+                </div>
+                <div class="slide" data-id="5">
                     <article class="otros">
                         <div class="image-placeholder"></div>
                         <p class="category">Category</p>
                         <h2>Blog title heading goes here</h2>
                         <p>Lorem ipsum dolor sit amet et delectus accommodare.</p>
                         <p class="author">Author Name</p>
-                        <button class="like-button">Like</button>
-                        <a href="#" class="read-more">Read more</a>
+                        <div class="like-container">
+                            <button class="like-button"><img id="like-img" src="../assets/logos/like.png" alt=""></button>
+                            <p class="Nº likes">0</p>
+                        </div>                        
+                        <a href="" class="read-more" target="_blank">Read more</a>
                     </article>
                 </div>
                 <div class="slide">
-                    <article class="otros">
+                    <article class="otros" data-id="6">
                         <div class="image-placeholder"></div>
                         <p class="category">Category</p>
                         <h2>Blog title heading goes here</h2>
                         <p>Lorem ipsum dolor sit amet et delectus accommodare.</p>
                         <p class="author">Author Name</p>
-                        <button class="like-button">Like</button>
-                        <a href="#" class="read-more">Read more</a>
-                    </article>
-                </div>
-                <div class="slide">
-                    <article class="otros">
-                        <div class="image-placeholder"></div>
-                        <p class="category">Category</p>
-                        <h2>Blog title heading goes here</h2>
-                        <p>Lorem ipsum dolor sit amet et delectus accommodare.</p>
-                        <p class="author">Author Name</p>
-                        <button class="like-button">Like</button>
-                        <a href="#" class="read-more">Read more</a>
+                        <div class="like-container">
+                            <button class="like-button"><img id="like-img" src="../assets/logos/like.png" alt=""></button>
+                            <p class="Nº_likes">0</p>
+                        </div>                        
+                        <a href="" target="_blank" class="read-more">Read more</a>
                     </article>
                 </div>
             </div>
@@ -180,16 +200,24 @@
     <footer>
         <div class="footer-content">
             <div class="logo"></div>
-            <img src="./logos/LogoPequeOscuro.png">
+            <img src="../assets/logos/LogoPequeOscuro.png">
         </div>
+        <nav>
+            <a class="Euroliga" href="">Euroliga</a>
+            <a class="ACB" href="">Liga ACB</a>
+            <a class="NBA" href="">NBA</a>
+            <a class="admin" href="">Admin</a>
+        </nav> 
         <div class="social-links">
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
             <a href="#">Instagram</a>
         </div>
+              
         <p>&copy; 2024 La meva pàgina web. Tots els drets reservats.</p>
     </footer>
 
-    <script src=".js/homepage.js"></script>
+    <script src="../js/HomePage.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>
